@@ -18,3 +18,15 @@ President Franklin D. Roosevelt in 1941
 President John F. Kennedy in 1961
 President Richard Nixon in 1973
 (Hint: use .words(), .raw(), .sent() for extracting counts)
+
+Code Snippet to extract the three speeches:
+
+"
+import nltk
+nltk.download('inaugural')
+from nltk.corpus import inaugural
+inaugural.fileids()
+inaugural.raw('1941-Roosevelt.txt')
+inaugural.raw('1961-Kennedy.txt')
+inaugural.raw('1973-Nixon.txt')
+"
